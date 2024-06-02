@@ -64,8 +64,65 @@ To run tests, run the following command
 ```
 
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.udemy.com/course/langchain/?referralCode=D981B8213164A3EA91AC)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eden-marco/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://www.udemy.com/user/eden-marco/)
+Para instalar pipenv en Kubuntu, puedes seguir estos pasos detallados:
 
+    Actualizar los paquetes del sistema:
+    Abre una terminal y actualiza la lista de paquetes e instala las actualizaciones disponibles:
+
+    bash
+
+sudo apt update
+sudo apt upgrade
+
+Instalar Python y pip:
+Si no tienes Python instalado, puedes instalar Python y pip con los siguientes comandos:
+
+bash
+
+sudo apt install python3 python3-pip
+
+Instalar pipenv:
+Una vez que tienes pip instalado, puedes instalar pipenv utilizando pip:
+
+bash
+
+sudo pip3 install pipenv
+
+Verificar la instalación:
+Para asegurarte de que pipenv se ha instalado correctamente, puedes verificar la versión instalada con el siguiente comando:
+
+bash
+
+    pipenv --version
+
+Uso básico de pipenv
+
+Para crear un nuevo entorno virtual y gestionar dependencias con pipenv, puedes seguir estos pasos básicos:
+
+    Crear un nuevo entorno virtual:
+    Navega al directorio de tu proyecto y ejecuta:
+
+    bash
+
+pipenv install
+
+Instalar paquetes:
+Para instalar paquetes dentro de tu entorno virtual, usa:
+
+bash
+
+pipenv install <paquete>
+
+Activar el entorno virtual:
+Para activar el entorno virtual y trabajar dentro de él, usa:
+
+bash
+
+pipenv shell
+
+Salir del entorno virtual:
+Para salir del entorno virtual, simplemente escribe:
+
+bash
+
+exit
