@@ -1,128 +1,124 @@
+# Ice Breaker
 
-# ice_breaker
+A repository for learning LangChain🦜🔗 by building a generative AI application.
 
-A repository for learning LangChain🦜🔗  by building a generative ai application.
-
-This is a web application crawling Linkedin & Twitter data about a person and customizes an ice breaker with them.
-
+This is a web application that crawls LinkedIn data about a person and customizes an ice breaker with them.
 
 ![Logo](https://github.com/emarco177/ice_breaker/blob/main/static/demo.gif)
 [![udemy](https://img.shields.io/badge/LangChain%20Udemy%20Course-Coupon%20%2412.99-brightgreen)](https://www.udemy.com/course/langchain/?referralCode=D981B8213164A3EA91AC)
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your `.env` file:
 
-`PYTHONPATH=/{YOUR_PATH_TO_PROJECT}/ice_breaker`
+- `PYTHONPATH=/{YOUR_PATH_TO_PROJECT}/ice_breaker`
+- `OPENAI_API_KEY`
+- `PROXYCURL_API_KEY`
 
-`OPENAI_API_KEY`
-
-`PROXYCURL_API_KEY`
-
-`TAVILY_API_KEY`
-
-`TWITTER_API_KEY`
-
-`TWITTER_API_SECRET`
-
-`TWITTER_ACCESS_TOKEN`
-
-`TWITTER_ACCESS_SECRET`
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/emarco177/ice_breaker.git
+git clone https://github.com/emarco177/ice_breaker.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd ice_breaker
+cd ice_breaker
 ```
 
 Install dependencies
 
 ```bash
-  pipenv install
+pipenv install
 ```
 
-Start the flask server
+copy .env.template to .env
 
 ```bash
-  pipenv run app.py
+cd .env.template .env
 ```
 
+Start the Flask server
 
-## Running Tests
+```bash
+pipenv run python app.py
+```
+Running Tests
 
 To run tests, run the following command
 
 ```bash
-  pipenv run pytest .
+pipenv run pytest .
 ```
 
+Installing pipenv on Kubuntu
 
-Para instalar pipenv en Kubuntu, puedes seguir estos pasos detallados:
+To install pipenv on Kubuntu, follow these steps:
+Update System Packages
 
-    Actualizar los paquetes del sistema:
-    Abre una terminal y actualiza la lista de paquetes e instala las actualizaciones disponibles:
+Open a terminal and update the package lists and install available updates:
 
-    bash
-
+```bash
 sudo apt update
 sudo apt upgrade
+```
+Install Python and pip
 
-Instalar Python y pip:
-Si no tienes Python instalado, puedes instalar Python y pip con los siguientes comandos:
+If you don't have Python installed, install Python and pip with the following commands:
 
-bash
-
+```bash
 sudo apt install python3 python3-pip
+```
+Install pipenv
 
-Instalar pipenv:
-Una vez que tienes pip instalado, puedes instalar pipenv utilizando pip:
+Once you have pip installed, install pipenv using pip:
 
-bash
-
+```bash
 sudo pip3 install pipenv
+```
 
-Verificar la instalación:
-Para asegurarte de que pipenv se ha instalado correctamente, puedes verificar la versión instalada con el siguiente comando:
+Verify the Installation
 
-bash
+To ensure that pipenv has been installed correctly, you can check the installed version with the following command:
 
-    pipenv --version
+```bash
+pipenv --version
+```
 
-Uso básico de pipenv
+Basic Usage of pipenv
 
-Para crear un nuevo entorno virtual y gestionar dependencias con pipenv, puedes seguir estos pasos básicos:
+To create a new virtual environment and manage dependencies with pipenv, follow these basic steps:
+Create a New Virtual Environment
 
-    Crear un nuevo entorno virtual:
-    Navega al directorio de tu proyecto y ejecuta:
+Navigate to your project directory and run:
 
-    bash
-
+```bash
 pipenv install
+```
 
-Instalar paquetes:
-Para instalar paquetes dentro de tu entorno virtual, usa:
+Install Packages
 
-bash
+To install packages within your virtual environment, use:
 
-pipenv install <paquete>
+```bash
+pipenv install <package>
+```
 
-Activar el entorno virtual:
-Para activar el entorno virtual y trabajar dentro de él, usa:
+Activate the Virtual Environment
 
-bash
+To activate the virtual environment and work within it, use:
 
+```bash
 pipenv shell
+```
 
-Salir del entorno virtual:
-Para salir del entorno virtual, simplemente escribe:
+Deactivate the Virtual Environment
 
-bash
+To exit the virtual environment, simply type:
 
+```bash
 exit
+```
