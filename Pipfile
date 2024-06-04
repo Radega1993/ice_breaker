@@ -10,6 +10,7 @@ python-dotenv = "*"
 openai = "*"
 langchain-community = "*"
 langchainhub = "*"
+flask = "*"
 
 [dev-packages]
 
